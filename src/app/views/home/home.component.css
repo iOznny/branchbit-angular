@@ -1,0 +1,8 @@
+body {
+    overflow-x: hidden;
+}
+
+#mainContent {
+    transition: margin-left 0.3s ease;
+    margin-left: 0;
+}

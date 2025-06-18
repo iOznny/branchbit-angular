@@ -1,0 +1,31 @@
+/* Sidebar cerrado por defecto */
+#sidebar {
+    width: 0;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+
+#sidebar.open {
+    width: 250px;
+}
+
+#sidebar.open ~ #mainContent {
+    margin-left: 250px;
+}
+
+/* Oculta sidebar en pantallas chicas */
+@media (max-width: 768px) {
+    #sidebar {
+        display: none !important;
+    }
+
+    #sidebar.open ~ #mainContent {
+        margin-left: 0;
+    }
+}
+
+/* Centrar contenido */
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
