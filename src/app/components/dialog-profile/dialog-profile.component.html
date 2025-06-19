@@ -1,0 +1,54 @@
+<h1 mat-dialog-title>Valores Seleccionados</h1>
+
+<mat-dialog-content class="mat-typography">
+    <ol>
+        <li>
+            <h6>Selección de Expediente</h6>
+            <p>{{ data.recordSelect }}</p>
+        </li>
+        
+        <li>
+            <h6>¿La digitalización de la ID para este folio está a color?</h6>
+            <p>{{ data.digitalizationId }}</p>
+        </li>
+        
+        <li>
+            <h6>¿Los datos en ambas ID, expediente y digitalizada coinciden?</h6>
+            <p>{{ data.bothId }}</p>
+        </li>
+        
+        <li>
+            <h6>Links Externos</h6>
+            <p>{{ data.externalLinks }}</p>
+        </li>
+        
+        <li>
+            <h6>¿La información devuelta por tus consultas es vigente?</h6>
+            <p>{{ data.currentConsultation }}</p>
+        </li>
+        
+        <li>
+            <h6>¿La información devuelta por las consultas coincide con la identificación del cliente?</h6>
+            <p>{{ data.currentConsultationMath }}</p>
+        </li>
+        
+        <li>
+            <h6>Respuesta de Solicitud</h6>
+            <p>{{ data.requestResponse }}</p>
+        </li>
+        
+        <li>
+            <h6>Motivo de Solicitud</h6>
+            <p>{{ data.requestReason }}</p>
+        </li>
+        
+        <li>
+            <h6>Observaciones de Solicitud</h6>
+            <p>{{ data.observations }}</p>
+        </li>
+    </ol>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button class="btn btn-primary" matButton mat-dialog-close>Cerrar</button>
+</mat-dialog-actions>
