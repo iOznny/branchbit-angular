@@ -1,0 +1,7 @@
+.images {
+    border: 1px solid black;
+}
+
+mat-chip:hover {
+    cursor: pointer;
+}
