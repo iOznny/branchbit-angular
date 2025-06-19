@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+
+/* Components */
 import { HomeComponent } from './views/home/home.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,
+  imports: [
+    RouterOutlet,
     HomeComponent
   ],
   templateUrl: './app.component.html',
@@ -13,5 +16,5 @@ import { HomeComponent } from './views/home/home.component';
 })
 
 export class AppComponent {
-  title = 'branchbit';
+  readonly title = 'Branchbit';
 }
