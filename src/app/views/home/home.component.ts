@@ -17,6 +17,4 @@ import { LayoutComponent } from '../../components/layout/layout.component';
   styleUrl: './home.component.css'
 })
 
-export class HomeComponent {
-
-}
+export class HomeComponent { }
