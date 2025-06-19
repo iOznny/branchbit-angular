@@ -41,18 +41,20 @@
         </table>
     </div>
     
-    <div class="row">
-        <div class="col-12 col-md-3 col-lg-2">
-            <select id="respuesta" class="form-select" formControlName="recordSelect">
-                <option>Expediente Crédito</option>
-                <option>Expediente Capacitación</option>
-            </select>
-        </div>
-        
-        <div class="col-12 col-md-8 col-lg-10">
-            <mat-chip-set aria-label="Dog selection">
-                <mat-chip *ngFor="let chip of chips" (click)="shuffleImages()">{{ chip }}</mat-chip>
-            </mat-chip-set>
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-12 col-md-3 col-lg-3">
+                <select id="respuesta" class="form-select" formControlName="recordSelect">
+                    <option>Expediente Crédito</option>
+                    <option>Expediente Capacitación</option>
+                </select>
+            </div>
+            
+            <div class="col-12 col-md-8 col-lg-9">
+                <mat-chip-set aria-label="Dog selection">
+                    <mat-chip *ngFor="let chip of chips" (click)="shuffleImages()">{{ chip }}</mat-chip>
+                </mat-chip-set>
+            </div>
         </div>
     </div>
 
